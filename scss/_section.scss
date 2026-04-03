@@ -1,0 +1,88 @@
+// ================= HERO SECTION =================
+.hero {
+  height: 80vh; 
+  position: relative; 
+  @include flex-center; 
+  text-align: center; 
+  overflow: hidden; 
+  padding-top: 60px;
+  
+  &__bg { 
+    position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%; z-index: -1; 
+    background: $c-bg; overflow: hidden; 
+  }
+  
+  &__video {
+    position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%; object-fit: cover; 
+    opacity: 0.6; pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  }
+  
+  &__content { max-width: 700px; padding: 0 20px; z-index: 2; position: relative; }
+  
+  &__title { 
+    font-size: clamp(3rem, 8vw, 5.5rem); line-height: 1.1; 
+    margin-bottom: 20px; letter-spacing: 1px; 
+    span { color: $c-primary; } 
+  }
+  
+  p { font-size: 1.1rem; color: $c-sub; margin-bottom: 30px; }
+}
+
+// ================= GRIDS & LAYOUTS =================
+.section-header {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 15px; margin-bottom: 35px;
+  
+  // เรียกใช้ Mixin จอ sm (600px)
+  @include sm { flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 0; }
+  
+  h2 { font-size: 2.2rem; line-height: 1; margin-bottom: 8px; }
+  .title-accent { color: $c-primary; }
+  p { color: $c-sub; font-size: 1rem; }
+}
+
+.sets-grid {
+  display: grid; grid-template-columns: 1fr; gap: 25px; 
+  @include lg { grid-template-columns: repeat(2, 1fr); } // เรียกใช้ Mixin จอ lg (1100px)
+}
+
+.figures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px; }
+.trade-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+
+// ================= CONTACT SECTION =================
+.contact-container {
+  display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 1000px; margin: 40px auto 0; 
+  @include md { grid-template-columns: 1fr 1.2fr; gap: 60px; } // เรียกใช้ Mixin แท็บเล็ต (768px)
+}
+
+.contact-info {
+  h3 { font-family: $f-head; font-size: 2.2rem; margin-bottom: 15px; color: $c-primary; letter-spacing: 1px; }
+  p { color: $c-sub; margin-bottom: 30px; font-size: 1.05rem; line-height: 1.6; }
+  .contact-list { li { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid $c-border; color: $c-sub; } strong { color: $c-text; margin-right: 10px; } }
+}
+
+.contact-form { background: $c-surface; padding: 40px; border-radius: 12px; border: 1px solid $c-border; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+// ================= LOCATION SECTION =================
+.location-section { margin-top: 80px; }
+
+.location-grid {
+  display: grid; grid-template-columns: 1fr; gap: 30px;
+  @include md { grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: stretch; }
+}
+
+.location-info {
+  background: $c-surface; padding: 40px; border-radius: 12px; border: 1px solid $c-border; display: flex; flex-direction: column; justify-content: center;
+  .location-title { color: $c-primary; font-size: 2rem; margin-bottom: 5px; font-family: $f-head; letter-spacing: 1px; }
+  .location-desc { color: $c-sub; font-size: 1rem; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid $c-border; }
+  .location-details li { display: flex; flex-direction: column; margin-bottom: 20px; &:last-child { margin-bottom: 0; } strong { color: $c-text; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; } span { color: $c-sub; line-height: 1.6; } }
+}
+
+.location-map {
+  height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid $c-border; background: #1f1f22;
+  @include md { height: 100%; min-height: 400px; }
+  iframe { width: 100%; height: 100%; border: none; filter: invert(90%) hue-rotate(180deg) contrast(85%); }
+}

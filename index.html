@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINI-HUB | Exchange Minifigures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__logo">MINI-HUB</div>
+    
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#" class="nav__link active" data-page="home">Market</a></li>
+      <li><a href="#" class="nav__link" data-page="trade">Trade Hub</a></li>
+      <li><a href="#" class="nav__link" data-page="contact">Support</a></li>
+      <li class="nav__mobile-only"><button class="btn btn--primary" style="width: 100%; margin-top: 20px;">Login / Sign Up</button></li>
+    </ul>
+
+    <button class="btn btn--primary nav__desktop-only">Login / Sign Up</button>
+
+    <button class="nav__burger" id="burger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+ <section class="page active" id="home">
+    <div class="hero">
+      
+      <div class="hero__bg">
+        <video class="hero__video" autoplay loop muted playsinline>
+          <source src="video/hello-if-it-s-play-you-re-looking-for-look-no-further-1080-ytshorts.savetube.me.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Trade. Build. <br><span>Collect.</span></h1>
+        <p>The premium marketplace for rare Minifigure collectors worldwide.</p>
+        <button class="btn btn--primary">Start Trading</button>
+      </div>
+      
+    </div>
+
+    <div class="section-padding">
+      
+      <div class="market-section" style="margin-bottom: 80px;">
+        <div class="section-header">
+          <div class="header-text">
+            <h2 class="title-accent">Complete Series</h2>
+            <p>Get the full collection in one sealed box.</p>
+          </div>
+          <a href="#" class="btn btn--outline btn--sm">View All Series</a>
+        </div>
+        
+        <div class="sets-grid">
+          <div class="set-card">
+            <div class="set-card__img" style="background-image: url('8721b598440fc4f296f32a950f65151d.jpg');">
+              <span class="badge badge--new">New Release</span>
+            </div>
+            <div class="set-card__content">
+              <span class="series-tag">Series 28</span>
+              <h3>Minifigures Full Set</h3>
+              <p>Includes all 12 unique characters + original packaging and accessories.</p>
+              <div class="set-card__footer">
+                <span class="price">$59.99</span>
+                <button class="btn btn--primary">Buy Set</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="set-card">
+            <div class="set-card__img" style="background-image: url('b63a4d89ab47c52597ac8d162c22f867.jpg');">
+              <span class="badge">Limited</span>
+            </div>
+            <div class="set-card__content">
+              <span class="series-tag">series 23</span>
+              <h3>Minifigures Full Set</h3>
+              <p>Full 12 characters collection.</p>
+              <div class="set-card__footer">
+                <span class="price">$65.00</span>
+                <button class="btn btn--primary">Buy Set</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="market-section">
+        <div class="section-header">
+          <div class="header-text">
+            <h2>Individual Market</h2>
+            <p>Find specific characters to complete your personal collection.</p>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-cat="all">All Figures</button>
+          <button class="filter-btn" data-cat="Popular">Popular</button>
+          <button class="filter-btn" data-cat="Exotic">Exotic</button>
+          <button class="filter-btn" data-cat="Legendary">Legendary</button>
+        </div>
+
+        <div class="figures-grid">
+          <div class="mini-card" data-cat="Popular">
+            <div class="mini-card__img" style="background-image: url('lego-minifigures-series-lego-movie-2-71023-awesome-remix-emmet.jpg')"></div>
+            <div class="mini-card__content">
+              <span class="mini-card__rarity">Rare · Edition #402</span>
+              <h3 class="mini-card__name">Emmnette</h3>
+              <div class="mini-card__footer">
+                <strong>$45.00</strong>
+                <button class="btn btn--outline">Trade</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-card" data-cat="Exotic">
+            <div class="mini-card__img" style="background-image: url('lego-collectible-minifigure-marvel-studios-series-zombie-captain-america-71031.jpg')"></div>
+            <div class="mini-card__content">
+              <span class="mini-card__rarity">Epic · Limited</span>
+              <h3 class="mini-card__name">Captain America zombies</h3>
+              <div class="mini-card__footer">
+                <strong>$120.00</strong>
+                <button class="btn btn--outline">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-card" data-cat="Legendary">
+            <div class="mini-card__img" style="background-image: url('lego-minifig-batman-movie-series-71017-glam-metal-batman.jpg')"></div>
+            <div class="mini-card__content">
+              <span class="mini-card__rarity">Common</span>
+              <h3 class="mini-card__name">Metal Batman</h3>
+              <div class="mini-card__footer">
+                <strong>$12.00</strong>
+                <button class="btn btn--outline">Trade</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-card" data-cat="starwars">
+            <div class="mini-card__img" style="background-image: url('75312_Boba_Fett.webp')"></div>
+            <div class="mini-card__content">
+              <span class="mini-card__rarity">Legendary</span>
+              <h3 class="mini-card__name">Boba Fett</h3>
+              <div class="mini-card__footer">
+                <strong>$250.00</strong>
+                <button class="btn btn--outline">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="trade">
+    <div class="section-padding">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <h1 class="hero__title" style="margin-bottom: 10px;">Trade <span>Hub</span></h1>
+        <p style="color: #a1a1aa; font-size: 1.1rem;">Propose a swap, find your missing scrap LOL.</p>
+      </div>
+
+      <div class="popular-traders" style="margin-bottom: 60px;">
+        <div class="section-header">
+          <div class="header-text">
+            <h2>Popular Traders</h2>
+            <p>Top collectors with the highest successful trades.</p>
+          </div>
+        </div>
+        
+        <div class="traders-flex">
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=150');">
+              <span class="status-dot online"></span>
+            </div>
+            <h3 class="trader-card__name">Giflee_NAJA</h3>
+            <p class="trader-card__stats">⭐ 4.9 (120 Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+          
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=150');">
+              <span class="status-dot online"></span>
+            </div>
+            <h3 class="trader-card__name">Collector_Dorn</h3>
+            <p class="trader-card__stats">⭐ 5.0 (89 Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150');">
+              <span class="status-dot offline"></span>
+            </div>
+            <h3 class="trader-card__name">Chaiyagorn_Pao</h3>
+            <p class="trader-card__stats">⭐ 4.8 (45 Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=150');">
+              <span class="status-dot online"></span>
+            </div>
+            <h3 class="trader-card__name">BrickMaster99</h3>
+            <p class="trader-card__stats">⭐ 4.9 (200+ Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150');">
+              <span class="status-dot online"></span>
+            </div>
+            <h3 class="trader-card__name">LegoKing_X</h3>
+            <p class="trader-card__stats">⭐ 4.7 (310 Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150');">
+              <span class="status-dot offline"></span>
+            </div>
+            <h3 class="trader-card__name">Sara_Builds</h3>
+            <p class="trader-card__stats">⭐ 5.0 (56 Trades)</p>
+            <button class="btn btn--outline btn--sm">View Profile</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-header" style="margin-bottom: 30px;">
+        <div class="header-text">
+          <h2>Recent Trade Listings</h2>
+          <p>Latest offers from the community.</p>
+        </div>
+      </div>
+
+      <div class="trade-grid">
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=150');"></div>
+              <span>Giflee_NAJA</span>
+            </div>
+            <span class="time">2 hrs ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Darth Vader (2020)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Boba Fett (Classic)</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=150');"></div>
+              <span>Collector_Dorn</span>
+            </div>
+            <span class="time">5 hrs ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Iron Man (Mark 43)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Spider-Man (2012)</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+        
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150');"></div>
+              <span>Tommy_Bricks</span>
+            </div>
+            <span class="time">8 hrs ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Ninja Zane (Sealed)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Ninja Kai (Any)</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+        
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150');"></div>
+              <span>Chaiyagorn_Pao</span>
+            </div>
+            <span class="time">1 day ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Classic Knight (1990)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Any Pirate Minifig</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150');"></div>
+              <span>Anna_Collects</span>
+            </div>
+            <span class="time">1 day ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Harry Potter (Series 1)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Ron Weasley</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+
+        <div class="trade-card">
+          <div class="trade-card__header">
+            <div class="user-info">
+              <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150');"></div>
+              <span>LegoKing_X</span>
+            </div>
+            <span class="time">2 days ago</span>
+          </div>
+          <div class="trade-card__body">
+            <div class="trade-item">
+              <span class="label">Offering:</span>
+              <strong>Mandalorian (Beskar)</strong>
+            </div>
+            <div class="trade-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            </div>
+            <div class="trade-item">
+              <span class="label">Looking for:</span>
+              <strong>Grogu (Baby Yoda)</strong>
+            </div>
+          </div>
+          <button class="btn btn--outline" style="width: 100%;">Propose Trade</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="contact">
+    <div class="section-padding">
+      
+      <div class="text-center" style="margin-bottom: 60px;">
+        <h1 class="hero__title" style="margin-bottom: 10px;">Support & <span>Contact</span></h1>
+        <p style="color: #a1a1aa; font-size: 1.1rem;">Need help with a trade? We've got your back.</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Have an issue with a transaction or a question about rarity grading? Reach out to our community mods.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> support@minihub.com</li>
+            <li><strong>Discord:</strong> MiniHub Official</li>
+            <li><strong>Twitter:</strong> @MiniHubExchange</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="input" placeholder="Your Username or Name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="input" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="textarea" rows="5" placeholder="How can we help you today?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <div class="location-section" style="margin-top: 100px;">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <div class="header-text">
+            <h2>Our Headquarters</h2>
+            <p>Drop by for a coffee and talk about rare bricks.</p>
+          </div>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info">
+            <h3 class="location-title" style="color: #facc15; font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; text-transform: uppercase; margin-bottom: 5px;">MINI-HUB Official</h3>
+            <p class="location-desc" style="color: #a1a1aa; padding-bottom: 20px; border-bottom: 1px solid #232326; margin-bottom: 25px;">Authentication & Trade Center</p>
+            
+            <ul class="location-details" style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 20px;">
+                <strong style="display: block; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"> Address</strong>
+                <span style="color: #a1a1aa; line-height: 1.6;">123 Brick Lane, Builder City, BK 10200</span>
+              </li>
+              <li style="margin-bottom: 20px;">
+                <strong style="display: block; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">Business Hours</strong>
+                <span style="color: #a1a1aa; line-height: 1.6;">Mon - Fri : 09:00 AM - 06:00 PM<br>Sat - Sun : Closed</span>
+              </li>
+              <li>
+                <strong style="display: block; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">Contact</strong>
+                <span style="color: #a1a1aa; line-height: 1.6;">+66 2 123 4567<br>hq@minihub.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="location-map" style="border-radius: 12px; overflow: hidden; border: 1px solid #232326; background: #1f1f22;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15502.810508518855!2d100.5284896!3d13.736717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2992a5436665b%3A0xe21d0aab1b106366!2sLumphini%20Park!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth" 
+              width="100%" 
+              height="100%" 
+              style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(85%); min-height: 400px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 MINI-HUB Exchange. Built for Collectors.</p>
+    <p>LEGO® is a trademark of the LEGO Group.</p>
+  </footer>
+
+  <script src="java/main.js"></script>
+</body>
+</html>

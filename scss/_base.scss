@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: $c-bg;
+  color: $c-text;
+  line-height: 1.5;
+  overflow-x: hidden;
+  
+  // 🔴 เติมคำสั่งนี้เข้าไป เพื่อบังคับโชว์ร่อง Scrollbar ตลอดเวลา
+  overflow-y: scroll; 
+  
+  font-family: $f-main;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+.page {
+  display: none;
+  &.active { display: block; animation: fadeIn 0.5s $ease; }
+}
+
+.section-padding { padding: 80px 5%; }

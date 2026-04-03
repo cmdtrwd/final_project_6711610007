@@ -1,0 +1,5 @@
+$f-main: 'Barlow', sans-serif;
+$f-head: 'Barlow Condensed', sans-serif;
+
+body { font-family: $f-main; }
+h1, h2, h3, .nav__logo { font-family: $f-head; text-transform: uppercase; font-weight: 700; }
